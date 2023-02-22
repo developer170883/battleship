@@ -1,6 +1,4 @@
-﻿
-
-using BattleShip.StateTracker.Api.Interface;
+﻿using BattleShip.StateTracker.Api.Interface;
 using BattleShip.StateTracker.Api.Model.Board;
 using BattleShip.StateTracker.Api.Model.Ship;
 
@@ -17,9 +15,6 @@ namespace BattleShip.StateTracker.Api.Implementation
                 //for each ship coordinate, update cell status to occupied
                 board.BoardCellStatuses[row, column + i] = Model.BoardCellStatus.Occupied;
 
-                //update the number of cells that are occupied.
-                //I use this to compare against number of hits as a simple way to
-                //determine if the game is lost
                 board.OccupationCount++;
             }
         }

@@ -8,10 +8,4 @@
         public int PlacementColumn { get; set; }
         public BattleShipType BattleShipType { get; set; }
     }
-
-    public class PlaceShipResponse
-    {
-        public int BoardRows { get; set; }
-        public int BoardColumns { get; set; }
-    }
 }

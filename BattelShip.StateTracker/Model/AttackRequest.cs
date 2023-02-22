@@ -11,9 +11,4 @@
         public BattleShipType BattleShipType { get; set; }
         public BoardCellStatus BoardCellStatus { get; set; }
     }
-
-    public class AttackResponse
-    {
-        public AttackStatus AttackStatus { get; set; }
-    }
 }
